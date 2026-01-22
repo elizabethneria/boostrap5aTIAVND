@@ -35,7 +35,7 @@
                 <p>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura</p>
             </header>
             <figure>
-                <img src="img/g1.png" alt="Un Fold Escocés">+
+                <img src="img/g1.png" alt="Un Fold Escocés">
                 <figcaption>Un Fold Escocés viendo </figcaption>
             </figure> 
             <p>
@@ -46,58 +46,58 @@
 
         <!-- Layout de contedido + sidebar -->
         <section aria-labelledby="titulo-resumen">
-            <header>
+            <header class="container">
                 <h2 id="titulo-resumen">Resumen rápido</h2>
                 <p>Una estructura tipica para aplicar grid:contenido principal + informacion adicional</p>
             </header>
 
-            <div>
-                <!-- columna principal -->
-                  <section id="Historia" aria-labelledby="historia">
-            <header>
-                <h3 id="titulo historia">Origen e historia </h3>
-            </header>
-                    <p>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura. Su característica más distintiva son sus orejas dobladas hacia adelante y hacia abajo, lo que les da una apariencia única y adorable. Esta raza fue descubierta en 1961 cuando una granjera llamada William Ross encontró un gato con orejas dobladas llamado Susie. A partir de Susie, se inició un programa de cría selectiva para preservar esta característica genética.</p>
-                    <p>Los Fold escoceses son conocidos por su temperamento amigable y cariñoso. Son gatos sociables que disfrutan de la compañía humana y se llevan bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
-                </aside>
-
-                <!-- sidebar -->
-                 <aside aria-labelledby="titulo-ficha">
-                    <h3 id="titulo-ficha">Ficha rápida</h3>
-                    <ul>
-                        <li><strong>Tamaño</strong> mediano</li>
-                        <li><strong>Peso</strong> entre 3 y 5 kg</li>
-                        <li><strong>Expectativa de vida</strong> entre 12 y 15 años</li>
-                        <li><strong>Personalidad</strong> amigable, cariñoso y juguetón</li>
-                    </ul>
-
-                    <section aria-labelledby="titulo-dato">
-                        <h4 id="titulo-dato">Dato curioso</h4>
-                        <p>El gen responsable de las orejas dobladas en los Fold escoceses también puede causar problemas de salud en las articulaciones si no se crían cuidadosamente.</p>
-                    </section>
-                 </aside>
-            </div>
-        </section>
-        <!-- Caracteristicas -->
-         <section id="caracteristicas" aria-labelledby="titulo-caracteristicas">
-            <header>
-                <h2 id="titulo-caracteristicas">Características de los Fold escoceses</h2>
-            </header>
-            <div>
-                <article>
-                    <h3>Aspecto físico</h3>
-                    <p>Los Fold escoceses tienen un cuerpo compacto y musculoso, con patas cortas y una cola de longitud media. Su pelaje puede ser corto o largo, y viene en una variedad de colores y patrones. La característica más distintiva es, por supuesto, sus orejas dobladas, que les dan una apariencia única.</p>
-                </article>
-                <article>
-                    <h3>Temperamento</h3>
-                    <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
-                </article>
-                <article>
-                    <h3>Temperamento</h3>
-                    <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
-                </article>
-            </div>
-        </section>
+            <div class="container">
+                <div class="row"> 
+                        <!-- columna principal -->
+                            <article class="col-12 col-md-8" aria-labelledby="Titulo HIistoria">
+                            <h2 id="titulo historia">Origen e historia </h2>
+                            <p>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura. Su característica más distintiva son sus orejas dobladas hacia adelante y hacia abajo, lo que les da una apariencia única y adorable. Esta raza fue descubierta en 1961 cuando una granjera llamada William Ross encontró un gato con orejas dobladas llamado Susie. A partir de Susie, se inició un programa de cría selectiva para preservar esta característica genética.</p>
+                            <p>Los Fold escoceses son conocidos por su temperamento amigable y cariñoso. Son gatos sociables que disfrutan de la compañía humana y se llevan bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
+                        </article>
+                        
+                        <!-- sidebar -->
+                        <aside class="col-12 col-md-4" aria-labelledby ="titulo-ficha">
+                            <h3 id="titulo-ficha">Ficha rápida</h3>
+                            <ul>
+                                <li><strong>Tamaño</strong> mediano</li>
+                                <li><strong>Peso</strong> entre 3 y 5 kg</li>
+                                <li><strong>Expectativa de vida</strong> entre 12 y 15 años</li>
+                                <li><strong>Personalidad</strong> amigable, cariñoso y juguetón</li>
+                            </ul>
+                            
+                            <section aria-labelledby="titulo-dato">
+                                <h4 id="titulo-dato">Dato curioso</h4>
+                            <p>El gen responsable de las orejas dobladas en los Fold escoceses también puede causar problemas de salud en las articulaciones si no se crían cuidadosamente.</p>
+                        </section>
+                    </aside>
+                </div>
+            </div>        
+            </section>
+            <!-- Caracteristicas -->
+            <section id="caracteristicas" aria-labelledby="titulo-caracteristicas">
+                <header>
+                    <h2 id="titulo-caracteristicas">Características de los Fold escoceses</h2>
+                </header>
+                <div>
+                    <article>
+                        <h3>Aspecto físico</h3>
+                        <p>Los Fold escoceses tienen un cuerpo compacto y musculoso, con patas cortas y una cola de longitud media. Su pelaje puede ser corto o largo, y viene en una variedad de colores y patrones. La característica más distintiva es, por supuesto, sus orejas dobladas, que les dan una apariencia única.</p>
+                    </article>
+                    <article>
+                        <h3>Temperamento</h3>
+                        <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
+                    </article>
+                    <article>
+                        <h3>Temperamento</h3>
+                        <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
+                    </article>
+                </div>
+            </section>
 
         <!-- Galeria -->
          <section id="galeria" aria-labelledby="titulo-galeria">
