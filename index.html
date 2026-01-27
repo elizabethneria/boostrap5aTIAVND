@@ -11,45 +11,56 @@
 <body>
     <header>
         <a href="#contenido" aria-label="Ir al contenido principal">Ir al contenido principal</a>
-        <div>
+        <div class="container">
             <h1>Fold Escocés</h1>
             <p>Tu sitio educativo sobre esta maravillosa raza de gatos🐈‍⬛</p>
         </div>
 
-        <nav aria-label="Navegacion Principal">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#caracteristicas">Caracteristicas</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegacion Principal">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuprincipal" aria-controls="menuprincipal" aria-expanded="false" aria-label="Mostrar/Ocultar Menu">
+                    <span class="navbar-toggler-icon"></span>   
+                </button>
+                <div class="collapse navbar-collapse" id="menuprincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#caracteristicas">Caracteristicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main id="contenido">
         <!-- seccion hero -->
         <section id="inicio" aria-label="inicio-titulo">
-            <header> 
-                <h2 id="inicio-titulo">Bienvenido al sitio del Fold Escocés</h2>
-                <p>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura</p>
-            </header>
-            <figure>
-                <img src="img/g1.png" alt="Un Fold Escocés">
-                <figcaption>Un Fold Escocés viendo </figcaption>
-            </figure> 
-            <p>
-                <a href="#caracteristicas">ver caracteristicas</a>
-                <a href="#contacto">Adopcion responsable</a>
-            </p>
-        </section>
-
+            <div class="container">
+                <header> 
+                    <h2 id="inicio-titulo">Bienvenido al sitio del Fold Escocés</h2>
+                    <p>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura</p>
+                </header>
+                <figure>
+                    <img src="img/g1.png" alt="Un Fold Escocés">
+                    <figcaption>Un Fold Escocés viendo </figcaption>
+                </figure> 
+                <p>
+                    <a href="#caracteristicas">ver caracteristicas</a>
+                    <a href="#contacto">Adopcion responsable</a>
+                </p>
+            </section>
+        </div>
+            
         <!-- Layout de contedido + sidebar -->
         <section aria-labelledby="titulo-resumen">
-            <header class="container">
-                <h2 id="titulo-resumen">Resumen rápido</h2>
-                <p>Una estructura tipica para aplicar grid:contenido principal + informacion adicional</p>
-            </header>
+            <div class="container">
+                <header class="container">
+                    <h2 id="titulo-resumen">Resumen rápido</h2>
+                    <p>Una estructura tipica para aplicar grid:contenido principal + informacion adicional</p>
+                </header>
+            </div>
 
             <div class="container">
                 <div class="row"> 
@@ -80,112 +91,120 @@
             </section>
             <!-- Caracteristicas -->
             <section id="caracteristicas" aria-labelledby="titulo-caracteristicas">
-                <header>
-                    <h2 id="titulo-caracteristicas">Características de los Fold escoceses</h2>
-                </header>
-                <div>
-                    <article>
-                        <h3>Aspecto físico</h3>
-                        <p>Los Fold escoceses tienen un cuerpo compacto y musculoso, con patas cortas y una cola de longitud media. Su pelaje puede ser corto o largo, y viene en una variedad de colores y patrones. La característica más distintiva es, por supuesto, sus orejas dobladas, que les dan una apariencia única.</p>
-                    </article>
-                    <article>
-                        <h3>Temperamento</h3>
-                        <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
-                    </article>
-                    <article>
-                        <h3>Temperamento</h3>
-                        <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
-                    </article>
-                </div>
-            </section>
-
-        <!-- Galeria -->
-         <section id="galeria" aria-labelledby="titulo-galeria">
-            <header>
-                <h2 id="titulo-galeria">Galeria de imágenes</h2>
-            </header>
-            <div>
-                <figure>
-                    <img src="img/g2.png" alt="Fold Escocés jugando con una pelota">
-                    <figcaption>Fold Escocés jugando con una pelota</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/g3.png" alt="Fold Escocés durmiendo plácidamente">
-                    <figcaption>Fold Escocés durmiendo plácidamente</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/g4.png" alt="Fold Escocés explorando su entorno">
-                    <figcaption>Fold Escocés explorando su entorno</figcaption>
-                </figure>
+                <div class="container">
+                    <header>
+                        <h2 id="titulo-caracteristicas">Características de los Fold escoceses</h2>
+                    </header>
+                    <div>
+                        <article>
+                            <h3>Aspecto físico</h3>
+                            <p>Los Fold escoceses tienen un cuerpo compacto y musculoso, con patas cortas y una cola de longitud media. Su pelaje puede ser corto o largo, y viene en una variedad de colores y patrones. La característica más distintiva es, por supuesto, sus orejas dobladas, que les dan una apariencia única.</p>
+                        </article>
+                        <article>
+                            <h3>Temperamento</h3>
+                            <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
+                        </article>
+                        <article>
+                            <h3>Temperamento</h3>
+                            <p>Son gatos muy afectuosos y sociables. Disfrutan de la compañía humana y suelen llevarse bien con otros animales domésticos. Son juguetones y curiosos, lo que los convierte en excelentes compañeros para familias y personas solteras por igual.</p>
+                        </article>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- FAQ  con  details y sumary -->
-        <section id="faq" aria-labelledby="titulo-faq">
-            <header>
-                <h2 id="titulo-faq">Preguntas Frecuentes</h2>
-            </header>
-            
-            <details>
-                <summary >¿Los Fold escoceses requieren cuidados especiales?</summary>
-                <p>Es importante monitorear la salud de sus articulaciones debido al gen que causa las orejas dobladas. Además, requieren un cuidado regular del pelaje y visitas veterinarias periódicas.</p>
-            </details>
-                <details>   
-                    <summary>¿Son adecuados para familias con niños?</summary>
-                    <p>Sí, los Fold escoceses son conocidos por su naturaleza amigable y juguetona, lo que los hace excelentes compañeros para niños.</p>   
-                </details>
-                <details>
-                    <summary>¿Pueden vivir con otros animales?</summary>
-                    <p>Sí, generalmente se llevan bien con otros gatos y perros si se les introduce adecuadamente.</p>  
-                </details>
-        </section>
-        <!-- Contacto -->
-        <section id="contacto" aria-labelledby="titulo-contacto">
-            <header>
-                <h2 id="titulo-contacto">Contacto</h2>
-                <p>¿Interesado en adoptar un Fold Escocés? ¡Contáctanos!</p>
-            </header>
-            <form action="#" method="post">
-                <fieldset>
-                        <legend>Escribenos</legend>
-                    <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    <p>
-                        <label for="tema">Tema:</label><br>
-                        <select id="tema" name="tema">
-                            <option value="adopcion">Adopción</option>
-                            <option value="cuidados">Cuidados</option>
-                            <option value="adopcion_responsable">Adopción responsable</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar</button>
-                    </p>
-                    </fieldset>
-                </form>         
-            </section>
-    </main>
-    <!-- pie de pagina -->
-     <footer>
-        <nav aria-labelledby="Enlaces de footer">
-            <ul>
-                <li><a href="$inicio">Inicio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-            </ul>
-        </nav>
-        <p>2026 Fold Escocés - Sitio Educatico </p>
-     </footer>
-     <script src="/boostrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Galeria -->
+            <section id="galeria" aria-labelledby="titulo-galeria">
+                <div class="container">
+                    <header>
+                        <h2 id="titulo-galeria">Galeria de imágenes</h2>
+                    </header>
+                    <div>
+                        <figure>
+                            <img src="img/g2.png" alt="Fold Escocés jugando con una pelota">
+                            <figcaption>Fold Escocés jugando con una pelota</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/g3.png" alt="Fold Escocés durmiendo plácidamente">
+                            <figcaption>Fold Escocés durmiendo plácidamente</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/g4.png" alt="Fold Escocés explorando su entorno">
+                            <figcaption>Fold Escocés explorando su entorno</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <!-- FAQ  con  details y sumary -->
+            <section id="faq" aria-labelledby="titulo-faq">
+                <div class="container">
+                    <header>
+                        <h2 id="titulo-faq">Preguntas Frecuentes</h2>
+                    </header>
+                    
+                    <details>
+                        <summary >¿Los Fold escoceses requieren cuidados especiales?</summary>
+                        <p>Es importante monitorear la salud de sus articulaciones debido al gen que causa las orejas dobladas. Además, requieren un cuidado regular del pelaje y visitas veterinarias periódicas.</p>
+                    </details>
+                    <details>   
+                        <summary>¿Son adecuados para familias con niños?</summary>
+                        <p>Sí, los Fold escoceses son conocidos por su naturaleza amigable y juguetona, lo que los hace excelentes compañeros para niños.</p>   
+                    </details>
+                    <details>
+                        <summary>¿Pueden vivir con otros animales?</summary>
+                        <p>Sí, generalmente se llevan bien con otros gatos y perros si se les introduce adecuadamente.</p>  
+                    </details>
+                </section>
+            </div>
+            <!-- Contacto -->
+            <section id="contacto" aria-labelledby="titulo-contacto">
+                <div class="container">
+                    <header>
+                        <h2 id="titulo-contacto">Contacto</h2>
+                        <p>¿Interesado en adoptar un Fold Escocés? ¡Contáctanos!</p>
+                    </header>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Escribenos</legend>
+                            <p>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </p>
+                            <p>
+                                <label for="tema">Tema:</label><br>
+                                <select id="tema" name="tema">
+                                    <option value="adopcion">Adopción</option>
+                                    <option value="cuidados">Cuidados</option>
+                                    <option value="adopcion_responsable">Adopción responsable</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="mensaje">Mensaje:</label><br>
+                                <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
+                            </p>
+                            <p>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Borrar</button>
+                            </p>
+                        </fieldset>
+                    </form>         
+                </section>
+            </div>
+        </main>
+        <!-- pie de pagina -->
+        <footer>
+            <nav aria-labelledby="Enlaces de footer">
+                <ul>
+                    <li><a href="$inicio">Inicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+            <p>2026 Fold Escocés - Sitio Educatico </p>
+        </footer>
+        <script src="/boostrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
